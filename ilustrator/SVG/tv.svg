@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="983.5 526.5 677.5 536.5 384.5 523.5 386.5 250.5 684.5 226.5 982.5 248.5 983.5 526.5"/>
+  <image width="2560" height="1440" transform="translate(343.32 192.93) scale(.27)" xlink:href="D:\for me\ber zer ker\bg2.png"/>
+</svg>

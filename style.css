@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { background-color: #170a1c; 
+    padding-bottom: 150px;
+}
+footer{
+    background-image: linear-gradient(to bottom,#101d42, #33738a);
+    width: 100%;
+    
+}
+.footerContainer{
+    width: 100%;
+}
+.profilePicture{
+    size: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+img {
+    border-radius: 50%;
+    border-color: lavender;
+    border-width: 5px;
+    border-style: double;
+}
+.gifDog{
+    border-radius: 100%;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px 20px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    color: #101d42;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    color: lavender;
+}
+p{
+    color: lavender;
+    padding:  30px 20px;
+    text-align: center;
+}
+h1{
+    color: lavender;
+    padding-top: 10px;
+    text-align: center;
+}
+h2{
+    color: lavender;
+    padding: 20px;
+    margin: 0%;
+}
+.videoYouTube{
+    text-align: center;
+
+}
