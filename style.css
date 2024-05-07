@@ -19,14 +19,19 @@ footer{
     text-align: center;
     padding-top: 20px;
 }
-img {
+ img {
     border-radius: 50%;
     border-color: lavender;
     border-width: 5px;
     border-style: double;
 }
-.gifDog{
-    border-radius: 100%;
+.bigName { 
+    padding-top: 50px;
+    text-decoration: underline overline lavender;/////
+}
+.gif{
+    text-align: center;
+    padding: 20px;
 }
 .socialIcons{
     display: flex;
@@ -42,6 +47,23 @@ img {
 .socialIcons a:hover{
     color: lavender;
 }
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+.footerNav ul li a{
+   color: white;
+   margin: 20px;
+   text-decoration: none;
+   font-size: 1.3em;
+   transition: 0.5s;
+   
+}
+.footerNav ul li a:hover{
+    color: #101d42;
+}
 p{
     color: lavender;
     padding:  30px 20px;
@@ -56,8 +78,13 @@ h2{
     color: lavender;
     padding: 20px;
     margin: 0%;
-}
-.videoYouTube{
     text-align: center;
+}
+.videoYouTube, iframe {
+    text-align: center;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    padding: 3%;
+    
 
 }
