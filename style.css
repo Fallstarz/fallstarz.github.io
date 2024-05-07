@@ -61,6 +61,7 @@ footer{
    text-decoration: none;
    font-size: 1.3em;
    transition: 0.5s;
+   font-family: ce;
    
 }
 .footerNav ul li a:hover{
@@ -70,17 +71,20 @@ p{
     color: lavender;
     padding:  30px 20px;
     text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
     color: lavender;
     padding-top: 10px;
     text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 h2{
     color: lavender;
     padding: 20px;
     margin: 0%;
     text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .videoYouTube, iframe {
     text-align: center;
