@@ -9,15 +9,38 @@ body { background-color: #170a1c;
 footer{
     background-image: linear-gradient(to bottom,#101d42, #33738a);
     width: 100%;
+    outline:  #101d42;
+    outline-width: 30px;
+    outline-style: double;
     
 }
 .footerContainer{
     width: 100%;
 }
+.portfolioBox {
+    background-color: #101d42;
+    width: 90%;
+    margin: 10%;
+}
+.shopBox {
+    background-color: #33738a;
+    width: 90%;
+    margin: 10%;
+}
+.contactBox{
+    background-color: #101d42;
+    width: 90%;
+    margin: 10%;
+}
+.footerContainer h1{
+    font-size: 60px;
+}
 .profilePicture{
-    size: 100px;
-    text-align: center;
-    padding-top: 20px;
+    
+    text-align: right;
+    padding-top: 50px;
+
+
 }
  img {
     border-radius: 50%;
@@ -25,14 +48,20 @@ footer{
     border-width: 5px;
     border-style: double;
 }
-.bigName { 
-    padding-top: 50px;
-    text-decoration: underline overline lavender;/////
-}
 .gif{
     text-align: center;
     padding: 20px;
 }
+.bigName h1{
+    padding-top: 50px;
+    font-size: 40px;
+}
+.bigName p {
+    width: 430px;
+    text-align: justify;
+    float:left;
+}
+
 .socialIcons{
     display: flex;
     justify-content: center;
@@ -71,20 +100,19 @@ p{
     color: lavender;
     padding:  30px 20px;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:sans-serif;
 }
 h1{
     color: lavender;
-    padding-top: 10px;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    font-family:sans-serif;
 }
 h2{
     color: lavender;
     padding: 20px;
     margin: 0%;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:sans-serif;
 }
 .videoYouTube, iframe {
     text-align: center;
@@ -92,6 +120,11 @@ h2{
     width: 100%;
     padding: 3%;
 }
+.footerContainer h3{
+    text-align: center;
+    font-family: sans-serif;
+}
+
 @media (max-width:650px){
 .footerNav ul{
     flex-direction: column;
@@ -103,4 +136,41 @@ h2{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-}   
+.profilePicture{
+    text-align: center;
+}
+.footerContainer h1{
+    text-align: center;
+    margin: 20px;
+}
+.bigName h1{
+    text-align: center;
+}
+.bigName p{
+    max-width: 100%;
+}
+.bigName img{
+    text-align: center;
+}
+}
+@media (min-width:651px){
+    .profilePicture {
+        padding-right: 170px;
+        float: right;
+    }
+    .footerContainer h1 {
+        margin-left: 150px;
+        margin-bottom: 20px;
+        padding-top: 70px;
+        text-align: center;
+    }
+    .footerContainer h3 {
+        margin-left: 150px;
+    }
+    .bigName h1{
+        margin: 90px 30px 15px 90px;
+    }
+    .bigName img{
+        text-align: right;
+    }
+}
