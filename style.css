@@ -38,15 +38,27 @@ footer{
 .profilePicture{
     
     text-align: right;
-    padding-top: 50px;
-
-
-}
- img {
+    margin-top: 50px;
     border-radius: 50%;
     border-color: lavender;
     border-width: 5px;
     border-style: double;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+
+}
+.profilePicture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ img {
+    /* border-radius: 50%;
+    border-color: lavender;
+    border-width: 5px;
+    border-style: double; */
 }
 .gif{
     text-align: center;
@@ -100,12 +112,12 @@ p{
     color: lavender;
     padding:  30px 20px;
     text-align: center;
-    font-family:sans-serif;
+    font-family:"Arial",sans-serif;
 }
 h1{
     color: lavender;
     text-align: left;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 h2{
     color: lavender;
@@ -155,7 +167,7 @@ h2{
 }
 @media (min-width:651px){
     .profilePicture {
-        padding-right: 170px;
+        /* padding-right: 170px; */
         float: right;
     }
     .footerContainer h1 {

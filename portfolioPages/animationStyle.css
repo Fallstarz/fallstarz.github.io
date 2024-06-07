@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { background-color: #170a1c; 
+    padding-bottom: 150px;
+}
+.footerContainer{
+    width: 100%;
+}
