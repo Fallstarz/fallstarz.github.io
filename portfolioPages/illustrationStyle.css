@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { background-color: #170a1c; 
+    padding-bottom: 150px;
+}
+.container {
+    text-align: center; 
+    margin: 50px;
+}
+img {
+    margin: 50px;
+    border-color: lavender;
+    border-width: 5px;
+    border-style: double;
+}
+p {
+    font-size: 34px;
+    color: lavender;
+}
+a {
+    font-size: 34px;
+    color: lavender;
+    text-align: center;
+}

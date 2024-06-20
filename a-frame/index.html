@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slenderman Trees</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+
+   
+    <a-assets>
+      <img id="photo1" src="/a-frame/photo.png">
+      <img id="photo2" src="/a-frame/photo.png">
+      <img id="photo3" src="/a-frame/photo.png">
+      <img id="photo4" src="/a-frame/photo.png">
+      <img id="photo5" src="/a-frame/photo.png">
+      <img id="photo6" src="/a-frame/photo.png">
+    </a-assets>
+
+ 
+    <a-box position="0 1.6 -3" rotation="0 45 45" color="#4CC3D9" animation="property: rotation; to: 0 405 45; loop: true; dur: 30000">
+      
+      <a-entity position="0 0 -0.501">
+        <a-image src="#photo1" width="1" height="1"></a-image>
+      </a-entity>
+      <a-entity position="0 0 0.501" rotation="0 180 0">
+        <a-image src="#photo2" width="1" height="1"></a-image>
+      </a-entity>
+      <a-entity position="0.501 0 0" rotation="0 -90 0">
+        <a-image src="#photo3" width="1" height="1"></a-image>
+      </a-entity>
+      <a-entity position="-0.501 0 0" rotation="0 90 0">
+        <a-image src="#photo4" width="1" height="1"></a-image>
+      </a-entity>
+      <a-entity position="0 -0.501 0" rotation="-90 0 0">
+        <a-image src="#photo5" width="1" height="1"></a-image>
+      </a-entity>
+      <a-entity position="0 0.501 0" rotation="90 0 0">
+        <a-image src="#photo6" width="1" height="1"></a-image>
+      </a-entity>
+    </a-box>
+
+    <a-entity slendertree="position: -4 0 -4;"></a-entity>
+    <a-entity slendertree="position: 4 0 -4;"></a-entity>
+
+    
+    <a-entity slendertree="position: -2 0 -2;"></a-entity>
+    <a-entity slendertree="position: 2 0 -2;"></a-entity>
+
+  
+    <a-entity slendertree="position: -4 0 2;"></a-entity>
+    <a-entity slendertree="position: 4 0 2;"></a-entity>
+
+    <a-entity slendertree="position: 0 0 -6;"></a-entity>
+    <a-entity slendertree="position: -6 0 0;"></a-entity>
+    <a-entity slendertree="position: 6 0 0;"></a-entity>
+
+
+    <script>
+      AFRAME.registerComponent('slendertree', {
+        schema: {
+          position: { type: 'vec3', default: '0 0 0' }
+        },
+        init: function() {
+          var data = this.data;
+
+        
+          var tree = document.createElement('a-entity');
+          tree.setAttribute('position', data.position);
+
+       
+          var trunk = document.createElement('a-cylinder');
+          trunk.setAttribute('position', '0 1 0');
+          trunk.setAttribute('radius', '0.1');
+          trunk.setAttribute('height', '2');
+          trunk.setAttribute('color', '#8B4513');
+          tree.appendChild(trunk);
+
+       
+          var crown = document.createElement('a-sphere');
+          crown.setAttribute('position', '0 3 0');
+          crown.setAttribute('radius', '1.5');
+          crown.setAttribute('color', '#228B22');
+          tree.appendChild(crown);
+
+      
+          this.el.appendChild(tree);
+        }
+      });
+    </script>
+  </a-scene>
+</body>
+</html>
