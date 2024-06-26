@@ -33,7 +33,7 @@ p{
     padding-bottom: 30px;
 }
 a {
-    font-size: 34px;
+    font-size: 1.3em;
     color: lavender;
     text-align: center;
 }
@@ -76,6 +76,7 @@ footer{
     padding: 10px;
     color: #101d42;
     opacity: 0.9;
+    
 }
 .socialIcons a:hover{
     color: lavender;
