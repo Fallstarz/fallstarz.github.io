@@ -6,9 +6,15 @@
 body { background-color: #170a1c; 
     padding-bottom: 150px;
 }
+p{
+    color: lavender;
+    padding:  30px 20px;
+    text-align: center;
+    font-family:"Arial",sans-serif;
+}
 h1{
     color: lavender;
-    text-align: left;
+    text-align: center;
     font-family:sans-serif;
     margin: 50px;
     font-size: 60px;
@@ -22,3 +28,102 @@ h1{
     flex-direction: row;
     padding-bottom: 30px;
 }
+.TopSection {
+    height: 40vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#101d42, #33738a, rgba(255, 255, 255, 0));
+    padding: 1em 5em;
+}
+.TopSection div h1 {
+    display: none;
+}
+
+.TopSection div h3 {
+    display: none;
+}
+
+footer{
+    background-image: linear-gradient(to bottom,#101d42, #33738a);
+    width: 100%;
+    outline:  #101d42;
+    outline-width: 30px;
+    outline-style: double;
+    margin-top: 50px;
+    
+}
+.footerContainer{
+    width: 100%;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px 20px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    color: #101d42;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    color: lavender;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    white-space: nowrap;
+    padding-bottom: 30px;
+
+}
+.footerNav ul li a{
+   color: white;
+   margin: 20px;
+   text-decoration: none;
+   font-size: 1.3em;
+   transition: 0.5s;
+   font-family: ce;
+   
+}
+.footerNav ul li a:hover{
+    color: #101d42;
+}
+.footerContainer h3{
+    text-align: center;
+    font-family: sans-serif;
+}
+@media (max-width:650px){
+    .footerNav ul{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .profilePicture{
+        text-align: center;
+    }
+    .footerContainer h1{
+        text-align: center;
+        margin: 20px;
+    }
+    }
+    
+    @media (min-width:651px){
+        .footerContainer h1 {
+            margin-left: 150px;
+            margin-bottom: 20px;
+            padding-top: 70px;
+            text-align: center;
+        }
+        .footerContainer h3 {
+            margin-left: 150px;
+        }
+        }
+    

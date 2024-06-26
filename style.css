@@ -17,63 +17,57 @@ footer{
 .footerContainer{
     width: 100%;
 }
-.portfolioBox {
-    background-color: #101d42;
-    width: 90%;
-    margin: 10%;
-}
-.shopBox {
-    background-color: #33738a;
-    width: 90%;
-    margin: 10%;
-}
 .contactBox{
     background-color: #101d42;
     width: 90%;
     margin: 10%;
 }
+
+.TopSection {
+    height: 40vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#101d42, #33738a, rgba(255, 255, 255, 0));
+    /*gap:3em;*/
+    padding: 1em 5em;
+}
+.TopSection div h1 {
+    display: none;
+}
+
+.TopSection div h3 {
+    display: none;
+}
+.TopSection2 {
+    height: 40vh;
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101d42;
+    padding: 1em;
+    margin-top: 50px;
+    margin: 4%;
+    margin-bottom: 50px;
+}
+.TopSection2 div h1 {
+    display: flex;
+    font-size: 36px;
+}
+.TopSection2 div h3 {
+    display: flex;
+    margin-top: 20px;
+    color: lavender;
+}
 .footerContainer h1{
     font-size: 60px;
-}
-.profilePicture{
-    
-    text-align: right;
-    margin-top: 50px;
-    border-radius: 50%;
-    border-color: lavender;
-    border-width: 5px;
-    border-style: double;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-
-}
-.profilePicture img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
- img {
-    /* border-radius: 50%;
-    border-color: lavender;
-    border-width: 5px;
-    border-style: double; */
 }
 .gif{
     text-align: center;
     padding: 20px;
 }
-.bigName h1{
-    padding-top: 50px;
-    font-size: 40px;
-}
-.bigName p {
-    width: 430px;
-    text-align: justify;
-    float:left;
-}
-
 .socialIcons{
     display: flex;
     justify-content: center;
@@ -166,10 +160,6 @@ h2{
 }
 }
 @media (min-width:651px){
-    .profilePicture {
-        /* padding-right: 170px; */
-        float: right;
-    }
     .footerContainer h1 {
         margin-left: 150px;
         margin-bottom: 20px;
@@ -185,4 +175,45 @@ h2{
     .bigName img{
         text-align: right;
     }
-}
+    .TopSection {
+    height: 30vh;
+    width:100%;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#101d42, #33738a);
+    gap:3em;
+    padding:1em 10em;
+    }
+    .TopSection div h1 {
+        display: flex;
+        font-size: 48px;
+    }
+    
+    .TopSection div h3 {
+        display: flex;
+        color:#170a1c ;
+    }
+    .TopSection2 {
+        height: 40vh;
+        width:90%;
+        display:flex;
+        justify-content: end;
+        align-items: center;
+        background-color: #101d42;
+        margin: 5%;
+        padding:1em 10em;
+        }
+        .TopSection2 div h1 {
+            display: flex;
+            font-size: 36px;
+        }
+        
+        .TopSection2 div h3 {
+            display: flex;
+            margin-top: 20px;
+            color: lavender;
+        }
+    
+
+    }
