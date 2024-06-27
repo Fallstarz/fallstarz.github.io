@@ -16,6 +16,7 @@ img {
     border-color: lavender;
     border-width: 5px;
     border-style: double;
+    max-width: 90%;
 
 }
 p{
