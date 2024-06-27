@@ -21,6 +21,7 @@ img {
 }
 .gif{
     max-width: 90%;
+    display: inline;
 }
 p{
     color: lavender;
