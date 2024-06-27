@@ -16,8 +16,11 @@ img {
     border-color: lavender;
     border-width: 5px;
     border-style: double;
-    max-width: 90%;
+   
 
+}
+.gif{
+    max-width: 90%;
 }
 p{
     color: lavender;
