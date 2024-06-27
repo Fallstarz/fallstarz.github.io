@@ -11,13 +11,6 @@ body { background-color: #170a1c;
     margin: 50px;
     font-size: 24px;
 }
-img {
-    margin: 50px;
-    border-color: lavender;
-    border-width: 5px;
-    border-style: double;
-
-}
 p{
     color: lavender;
     padding:  30px 20px;
@@ -77,7 +70,6 @@ footer{
     padding: 10px;
     color: #101d42;
     opacity: 0.9;
-    
 }
 .socialIcons a:hover{
     color: lavender;
@@ -106,6 +98,29 @@ footer{
     text-align: center;
     font-family: sans-serif;
 }
+
+.TopSection2 {
+    height: 40vh;
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #101d42;
+    padding: 1em;
+    margin-top: 50px;
+    margin: 4%;
+    margin-bottom: 50px;
+}
+.TopSection2 div h1 {
+    display: flex;
+    font-size: 36px;
+}
+.TopSection2 div h3 {
+    display: flex;
+    margin-top: 20px;
+    color: lavender;
+}
+
 @media (max-width:650px){
     .footerNav ul{
         flex-direction: column;
@@ -136,6 +151,26 @@ footer{
         .footerContainer h3 {
             margin-left: 150px;
         }
+        .TopSection2 {
+            height: 40vh;
+            width:90%;
+            display:flex;
+            justify-content: end;
+            align-items: center;
+            background-color: #101d42;
+            margin: 5%;
+            padding:1em 10em;
+            }
+            .TopSection2 div h1 {
+                display: flex;
+                font-size: 36px;
+            }
+            
+            .TopSection2 div h3 {
+                display: flex;
+                margin-top: 20px;
+                color: lavender;
+            }
         }
     
     

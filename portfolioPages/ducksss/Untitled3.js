@@ -1,10 +1,10 @@
 (function (cjs, an) {
 
-var p; // shortcut to reference prototypes
-var lib={};var ss={};var img={};
-lib.ssMetadata = [
-		{name:"Untitled_3_atlas_1", frames: [[0,0,779,574],[0,576,315,308],[317,576,224,274],[543,576,137,127],[543,705,110,104],[655,709,126,82],[682,576,116,131]]}
-];
+	var lib = lib || {};
+	var images = images || {};
+	var ss = ss || {};
+		{name:"Untitled3atlas1", frames [[0,0,779,574],[0,576,315,308],[317,576,224,274],[543,576,137,127],[543,705,110,104],[655,709,126,82],[682,576,116,131]]}
+		console.log("Untitled3.js loaded");
 
 
 (lib.AnMovieClip = function(){
@@ -28,49 +28,49 @@ lib.ssMetadata = [
 
 
 (lib.Backgroundcopy = function() {
-	this.initialize(ss["Untitled_3_atlas_1"]);
+	this.initialize(ss["Untitled3atlas1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Layer1 = function() {
-	this.initialize(ss["Untitled_3_atlas_1"]);
+	this.initialize(ss["Untitled3atlas1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Layer2 = function() {
-	this.initialize(ss["Untitled_3_atlas_1"]);
+	this.initialize(ss["Untitled3atlas1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Layer3 = function() {
-	this.initialize(ss["Untitled_3_atlas_1"]);
+	this.initialize(ss["Untitled3atlas1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Layer4 = function() {
-	this.initialize(ss["Untitled_3_atlas_1"]);
+	this.initialize(ss["Untitled3atlas1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Layer5 = function() {
-	this.initialize(ss["Untitled_3_atlas_1"]);
+	this.initialize(ss["Untitled3atlas1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Layer6 = function() {
-	this.initialize(ss["Untitled_3_atlas_1"]);
+	this.initialize(ss["Untitled3atlas1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
@@ -528,14 +528,14 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(51.6,287,1252.4,287);
 // library properties:
 lib.properties = {
-	id: '018481BBF586DC488D7F850BBD428E6C',
+	//id: '018481BBF586DC488D7F850BBD428E6C',
 	width: 779,
 	height: 574,
 	fps: 30,
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Untitled_3_atlas_1.png?1718186925094", id:"Untitled_3_atlas_1"}
+		{src:"/fallstarz.github.io/portfolioPages/ducksss/Untitled3atlas1.png", id:"Untitled3atlas1"}
 	],
 	preloads: []
 };

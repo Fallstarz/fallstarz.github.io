@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="Untitled3.js"></script>
+</head>
+<body onload="init();">
+    <canvas id="canvas" width="779" height="574"></canvas>
+    <script>
+        function init() {
+            if (typeof lib === 'undefined') {
+                console.error("lib is not defined");
+                return;
+            }
+            if (typeof images === 'undefined') {
+                console.error("images is not defined");
+                return;
+            }
+            if (typeof ss === 'undefined') {
+                console.error("ss is not defined");
+                return;
+            }
+
+            var canvas = document.getElementById("canvas");
+            if (!canvas) {
+                console.error("Canvas element not found");
+                return;
+            }
+
+            var stage = new createjs.Stage(canvas);
+            if (!stage) {
+                console.error("Failed to create stage");
+                return;
+            }
+
+            var loader = new createjs.LoadQueue(false);
+            loader.addEventListener("fileload", handleFileLoad);
+            loader.addEventListener("complete", handleComplete);
+
+            loader.loadManifest(lib.properties.manifest);
+
+            function handleFileLoad(evt) {
+                if (evt.item.type == "image") {
+                    images[evt.item.id] = evt.result;
+                }
+            }
+
+            function handleComplete(evt) {
+                var queue = evt.target;
+                var ssMetadata = lib.ssMetadata;
+                for (var i = 0; i < ssMetadata.length; i++) {
+                    ss[ssMetadata[i].name] = new createjs.SpriteSheet({
+                        "images": [queue.getResult(ssMetadata[i].name)],
+                        "frames": ssMetadata[i].frames
+                    });
+                }
+
+                exportRoot = new lib.Untitled3();
+                stage.addChild(exportRoot);
+                stage.update();
+
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+        }
+    </script>
+</body>
+</html>
